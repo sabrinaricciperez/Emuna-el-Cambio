@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /agendar.html
+
+Sitemap: https://sabrinaricciperez.github.io/Emuna-el-Cambio/sitemap.xml

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Reservá tu consulta | Emuná El Cambio</title>
-<meta name="description" content="Elegí día y horario para tu primera consulta de counseling con Clr. Sabrina Ricci Pérez, o escribile directamente por WhatsApp.">
+<meta name="description" content="Reservá tu primer encuentro de counseling con Clr. Sabrina Ricci Pérez. Encuentros online de una hora para atravesar duelos, decisiones y cambios, con acompañamiento profesional.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,6 +74,15 @@ p{margin:0 0 1.1rem}
 .btn-linea:hover{background:rgba(37,54,77,.07)}
 .acciones{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:2.2rem}
 .dato-chico{font-size:.86rem;color:var(--tinta-suave);margin-top:1.4rem}
+.beneficios{list-style:none;margin:2rem auto 0;padding:0;max-width:46ch;text-align:left}
+.beneficios li{position:relative;padding-left:1.6rem;margin-bottom:.8rem;font-size:.97rem}
+.beneficios li::before{content:'';position:absolute;left:0;top:.62em;width:7px;height:7px;
+  border-radius:50%;background:var(--dorado)}
+.claves{display:grid;gap:2rem;margin-top:2.5rem;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.clave{border-top:2px solid var(--dorado);padding-top:1.1rem}
+.clave h3{margin-bottom:.5rem}
+.clave p{font-size:.95rem;margin-bottom:0;color:var(--tinta-suave)}
 
 /* Dos caminos */
 .caminos{display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:2.5rem}
@@ -151,7 +160,14 @@ details p{font-size:.95rem;color:var(--tinta-suave);padding-right:2rem;padding-b
   <div class="contenedor">
     <span class="rotulo">Counseling online · Primer encuentro</span>
     <h1>Reservá tu primer encuentro</h1>
-    <p class="bajada">Un primer encuentro de una hora por videollamada para contar qué te está pasando y empezar a ordenarlo con acompañamiento profesional.</p>
+    <p class="bajada">Un duelo, una decisión que no llega, un cambio de trabajo, la sensación de estar en el lugar equivocado. El counseling es un espacio profesional de escucha para atravesar eso con alguien al lado.</p>
+    <ul class="beneficios">
+      <li>Te responde <strong>Sabrina en persona</strong>, en un plazo de 48 horas.</li>
+<!-- CONFIRMAR CON CAROLINA: porcentaje del beneficio y si se comunica así -->
+      <li><strong>20% para tu primer encuentro</strong> al reservar desde acá.</li>
+      <li>Te cuenta cómo funciona un proceso, sin ningún compromiso de continuar.</li>
+      <li>Encuentros por videollamada, desde donde estés.</li>
+    </ul>
     <div class="acciones">
       <a class="btn btn-lleno" href="#agenda">Elegir día y horario</a>
       <a class="btn btn-wa" href="https://wa.me/5491140756619?text=Hola%20Sabrina%2C%20quisiera%20reservar%20un%20primer%20encuentro." target="_blank" rel="noopener">Escribir por WhatsApp</a>
@@ -164,7 +180,7 @@ details p{font-size:.95rem;color:var(--tinta-suave);padding-right:2rem;padding-b
 <section class="seccion">
   <div class="contenedor">
     <span class="rotulo">Cómo querés empezar</span>
-    <h2>Dos maneras de empezar</h2>
+    <h2>Dos caminos, la misma agenda</h2>
     <div class="caminos">
       <div class="camino principal">
         <span class="etiqueta">Lo más rápido</span>
@@ -216,6 +232,29 @@ details p{font-size:.95rem;color:var(--tinta-suave);padding-right:2rem;padding-b
         <p>Contás lo que te está pasando. Sabrina escucha, pregunta y entre los dos ordenan qué se puede trabajar.</p>
       </div>
 <!-- Tercer paso pendiente: depende del encuadre que confirme Sabrina -->
+    </div>
+  </div>
+</section>
+
+<!-- ══ QUÉ ES EL COUNSELING ═════════════════════════════ -->
+<section class="seccion">
+  <div class="contenedor">
+    <span class="rotulo">Qué es el counseling</span>
+    <h2>Un espacio para pensar en voz alta</h2>
+    <p class="medida" style="margin-top:1.3rem">Es una disciplina del acompañamiento centrada en la persona. Su punto de partida es que nadie conoce tu vida mejor que vos, y que muchas veces lo que hace falta es tener dónde ordenarla en voz alta, con alguien que escuche con atención.</p>
+    <div class="claves">
+      <div class="clave">
+        <h3>Centrado en el presente</h3>
+        <p>El foco está en lo que estás atravesando ahora y en qué querés hacer con eso.</p>
+      </div>
+      <div class="clave">
+        <h3>Trabaja sobre tus recursos</h3>
+        <p>La idea es que salgas del proceso con herramientas propias que puedas seguir usando.</p>
+      </div>
+      <div class="clave">
+        <h3>Un encuadre profesional definido</h3>
+        <p>Acompaña las dificultades propias del vivir. Cuando una consulta necesita un abordaje clínico, se conversa y se deriva a un profesional de la psicología.</p>
+      </div>
     </div>
   </div>
 </section>
