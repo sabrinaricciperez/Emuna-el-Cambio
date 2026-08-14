@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emuná El Cambio — Counseling online | Clr. Sabrina Ricci Pérez</title>
+<meta name="description" content="Counseling, consultoría psicológica y desarrollo humano online con Clr. Sabrina Ricci Pérez. Acompañamiento en desarrollo personal, crisis vitales, duelos, orientación vocacional y laboral. Talleres para grupos e instituciones.">
+<meta property="og:title" content="Emuná El Cambio — Counseling online">
+<meta property="og:description" content="Un espacio de escucha para atravesar lo que estás viviendo, con alguien al lado. Encuentros virtuales.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sabrinaricciperez.github.io/Emuna-el-Cambio/og-emuna.jpg">
+<meta property="og:url" content="https://sabrinaricciperez.github.io/Emuna-el-Cambio/">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Emuná El Cambio">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sabrinaricciperez.github.io/Emuna-el-Cambio/">
+<link rel="icon" href="favicon.png">
+
+<!-- Falta subir a la raíz del repositorio:
+     og-emuna.jpg (1200x630, logo sobre fondo crema) y favicon.png -->
+
+<!-- Datos estructurados: le dicen a Google qué es este sitio -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Emuná El Cambio",
+  "description": "Counseling y consultoría psicológica en modalidad virtual. Acompañamiento en desarrollo personal, crisis vitales, duelos, orientación vocacional y laboral.",
+  "url": "https://sabrinaricciperez.github.io/Emuna-el-Cambio/",
+  "email": "emunaelcambio@gmail.com",
+  "telephone": "+5491140756619",
+  "areaServed": { "@type": "Country", "name": "Argentina" },
+  "availableLanguage": "es",
+  "sameAs": ["https://www.instagram.com/emunaelcambio"],
+  "founder": {
+    "@type": "Person",
+    "name": "Sabrina Ricci Pérez",
+    "jobTitle": "Counselor y Consultora Psicológica",
+    "knowsAbout": ["Counseling","Consultoría psicológica","Desarrollo humano","Desarrollo personal","Crisis vitales","Duelos","Orientación vocacional","Orientación laboral","Inteligencia emocional"]
+  },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acompañamiento en desarrollo personal" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orientación vocacional" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orientación laboral" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acompañamiento en crisis vitales" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acompañamiento en duelos" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Talleres de inteligencia emocional, comunicación asertiva y bienestar para grupos e instituciones" } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════
+   PALETA — cambiá solo estos valores para ajustar al logo
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --azul-profundo:#25364D;   /* azul del logo: títulos, pie */
+  --azul-medio:#55688A;      /* subtítulos y textos secundarios */
+  --arena:#FAF5ED;           /* fondo general */
+  --tostado:#F0E5D4;         /* arena cálida: hero y bandas */
+  --crema:#FFFDF9;           /* tarjetas */
+  --dorado:#B08D46;          /* dorado del árbol: líneas y detalles */
+  --dorado-boton:#BFA274;    /* dorado apagado: fondo de botones */
+  --dorado-claro:#D9BE7E;    /* dorado suave sobre fondo azul */
+  --tinta:#3D352C;           /* texto de lectura, marrón cálido */
+  --tinta-suave:#6E6154;     /* texto secundario cálido */
+  --tenue:#E8DCC8;           /* bordes y divisores */
+
+  --display:'Fraunces',Georgia,serif;
+  --texto:'Karla',system-ui,sans-serif;
+
+  --ancho:1100px;
+  --radio:2px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{
+  margin:0;background:var(--arena);color:var(--tinta);
+  font-family:var(--texto);font-size:17px;line-height:1.7;font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--azul-profundo)}
+:focus-visible{outline:2px solid var(--dorado);outline-offset:3px}
+
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;margin:0;
+  font-variation-settings:'SOFT' 30,'WONK' 1}
+h1{font-size:clamp(2.4rem,6vw,4.1rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);letter-spacing:-.015em}
+h3{font-size:1.25rem}
+p{margin:0 0 1.1rem}
+.contenedor{width:min(100% - 2.5rem,var(--ancho));margin-inline:auto}
+.seccion{padding:clamp(4rem,9vw,7rem) 0}
+.rotulo{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  font-weight:600;color:var(--dorado);margin-bottom:1.1rem;display:block}
+.intro{font-size:1.12rem;max-width:62ch}
+.medida{max-width:66ch}
+
+/* ── Navegación ─────────────────────────────────────────── */
+.nav{position:sticky;top:0;z-index:50;background:rgba(244,239,232,.93);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--tenue)}
+.nav-int{display:flex;align-items:center;gap:1.5rem;
+  padding:.9rem 0;width:min(100% - 2.5rem,var(--ancho));margin-inline:auto}
+.marca{font-family:var(--display);font-size:1.25rem;text-decoration:none;
+  color:var(--azul-profundo);letter-spacing:.01em;margin-right:auto;white-space:nowrap}
+.marca span{color:var(--dorado)}
+.nav-links{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-size:.9rem;color:var(--tinta);
+  padding-bottom:2px;border-bottom:1px solid transparent;transition:border-color .2s}
+.nav-links a:hover{border-color:var(--dorado)}
+.nav-toggle{display:none;background:none;border:1px solid var(--tenue);
+  border-radius:var(--radio);padding:.45rem .8rem;font:inherit;font-size:.85rem;cursor:pointer}
+
+/* ── Botones ────────────────────────────────────────────── */
+.btn{display:inline-block;text-decoration:none;font-family:var(--texto);
+  font-size:.92rem;font-weight:600;letter-spacing:.03em;padding:.85rem 1.6rem;
+  border-radius:var(--radio);border:1px solid transparent;cursor:pointer;transition:.2s}
+.btn-lleno{background:var(--dorado-boton);color:#22303F}
+.btn-lleno:hover{background:#ab8459}
+.btn-linea{border-color:currentColor;background:none}
+.btn-linea:hover{background:rgba(37,54,77,.07)}
+.btn-oscuro{background:var(--azul-profundo);color:var(--arena)}
+.btn-oscuro:hover{background:#1a2738}
+
+/* ── Hero ───────────────────────────────────────────────── */
+.hero{background:var(--tostado);color:var(--tinta);position:relative;overflow:hidden}
+.hero-int{padding:clamp(4.5rem,11vw,8rem) 0 clamp(4rem,9vw,6.5rem);position:relative;z-index:2}
+.hero .rotulo{color:var(--dorado)}
+.hero h1{max-width:15ch;color:var(--azul-profundo)}
+.hero-sub{max-width:52ch;margin-top:1.8rem;color:var(--tinta-suave);font-size:1.08rem}
+.hero-acciones{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.4rem}
+.hilo{position:absolute;right:-6%;top:0;height:100%;width:52%;
+  z-index:1;opacity:.55;pointer-events:none}
+.hilo path{fill:none;stroke:var(--dorado);stroke-width:1.1;
+  stroke-dasharray:1400;stroke-dashoffset:1400;animation:trazo 2.6s ease-out .3s forwards}
+@keyframes trazo{to{stroke-dashoffset:0}}
+.hero-pie{border-top:1px solid rgba(176,141,70,.3);padding:1.1rem 0;
+  font-size:.85rem;color:var(--tinta-suave);position:relative;z-index:2;
+  display:flex;flex-wrap:wrap;gap:.6rem 2rem}
+
+/* ── Bloque destacado / signature ───────────────────────── */
+.puerta{background:var(--crema);border:1px solid var(--tenue);
+  padding:clamp(1.8rem,4vw,3rem);border-radius:var(--radio)}
+.fichas{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.6rem 0 0;padding:0;list-style:none}
+.ficha{font:inherit;font-size:.92rem;cursor:pointer;background:transparent;
+  border:1px solid var(--tenue);border-radius:99px;padding:.55rem 1.15rem;
+  color:var(--tinta);transition:.18s;text-align:left}
+.ficha:hover{border-color:var(--azul-medio)}
+.ficha[aria-pressed="true"]{background:var(--azul-profundo);color:#F5EFE4;
+  border-color:var(--azul-profundo)}
+.respuesta{margin-top:1.7rem;border-top:1px solid var(--tenue);padding-top:1.5rem}
+.respuesta[hidden]{display:none}
+.respuesta p{max-width:58ch}
+.respuesta-acciones{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.enlace-sutil{font-size:.9rem;color:var(--azul-medio)}
+
+/* ── Grillas y tarjetas ─────────────────────────────────── */
+.grilla{display:grid;gap:1.5rem;margin-top:3rem}
+.grilla-3{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.grilla-2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.tarjeta{background:var(--crema);border:1px solid var(--tenue);
+  border-radius:var(--radio);padding:1.9rem 1.7rem;scroll-margin-top:100px;transition:.3s}
+.tarjeta h3{margin-bottom:.7rem;color:var(--azul-profundo)}
+.tarjeta p{font-size:.97rem;margin-bottom:0}
+.tarjeta.destacada{border-color:var(--dorado);box-shadow:0 0 0 3px rgba(184,134,59,.14)}
+.tarjeta ul{font-size:.93rem;color:var(--azul-medio);margin:.9rem 0 0;padding-left:1.1rem}
+.tarjeta li{margin-bottom:.25rem}
+
+/* ── Counseling: tres claves ────────────────────────────── */
+.claves{display:grid;gap:2rem;margin-top:2.8rem;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.clave{border-top:2px solid var(--dorado);padding-top:1.1rem}
+.clave h3{font-size:1.08rem;margin-bottom:.5rem}
+.clave p{font-size:.95rem;margin-bottom:0}
+
+/* ── Sabrina ────────────────────────────────────────────── */
+.perfil{background:var(--crema);border:1px solid var(--tenue);border-radius:var(--radio);
+  padding:clamp(1.8rem,4vw,3.2rem);display:grid;gap:2.5rem;
+  grid-template-columns:minmax(0,260px) minmax(0,1fr);align-items:start}
+.retrato{aspect-ratio:4/5;position:sticky;top:100px;background:var(--arena);border:1px dashed var(--tenue);
+  border-radius:var(--radio);display:grid;place-items:center;text-align:center;
+  font-size:.82rem;color:var(--azul-medio);padding:1rem;line-height:1.5}
+.saludo{font-family:var(--display);font-size:1.6rem;color:var(--azul-profundo);margin-bottom:1.2rem}
+.firma{font-family:var(--display);font-style:italic;font-size:1.35rem;
+  color:var(--azul-medio);margin-top:1.5rem}
+
+/* ── Talleres ───────────────────────────────────────────── */
+.area{margin-top:3rem}
+.area-titulo{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;font-family:var(--texto);
+  font-weight:600;color:var(--dorado);padding-bottom:.7rem;border-bottom:1px solid var(--tenue);margin-bottom:1.6rem}
+.talleres{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.taller{background:var(--crema);border:1px solid var(--tenue);border-radius:var(--radio);padding:1.5rem 1.4rem}
+.taller h3{font-size:1.08rem;margin-bottom:.5rem;color:var(--azul-profundo)}
+.taller p{font-size:.93rem;color:var(--tinta-suave);margin-bottom:0}
+.duracion{display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  font-weight:600;color:var(--azul-medio);background:var(--tostado);padding:.25rem .6rem;
+  border-radius:99px;margin-bottom:.9rem}
+.temario{columns:2;column-gap:2rem;font-size:.93rem;color:var(--tinta-suave);
+  margin:1.2rem 0 0;padding-left:1.1rem}
+.temario li{margin-bottom:.3rem;break-inside:avoid}
+@media (max-width:620px){.temario{columns:1}}
+
+/* ── Blog ───────────────────────────────────────────────── */
+.nota{display:block;text-decoration:none;color:inherit}
+.nota:hover h3{color:var(--dorado)}
+.nota .fecha{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--azul-medio);display:block;margin-bottom:.8rem}
+.nota h3{transition:color .2s}
+
+/* ── FAQ ────────────────────────────────────────────────── */
+.faq{margin-top:2.8rem;border-top:1px solid var(--tenue)}
+details{border-bottom:1px solid var(--tenue)}
+summary{cursor:pointer;list-style:none;padding:1.35rem 2.5rem 1.35rem 0;
+  font-family:var(--display);font-size:1.12rem;color:var(--azul-profundo);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';position:absolute;right:.4rem;top:1.15rem;
+  font-size:1.5rem;color:var(--dorado);font-family:var(--texto);font-weight:300;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{font-size:.97rem;max-width:70ch;padding-right:2rem}
+details p:last-child{padding-bottom:1.3rem;margin-bottom:0}
+
+/* ── Contacto ───────────────────────────────────────────── */
+.contacto{background:var(--azul-profundo);color:#EFE7DA}
+.contacto h2{color:var(--arena)}
+.contacto .rotulo{color:var(--dorado-claro)}
+.contacto-grid{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  margin-top:2.5rem;align-items:start}
+.datos{list-style:none;margin:0;padding:0}
+.datos li{padding:1rem 0;border-bottom:1px solid rgba(223,214,201,.18)}
+.datos span{display:block;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--dorado-claro);margin-bottom:.25rem}
+.datos a{color:#EFE7DA;text-decoration:none;border-bottom:1px solid rgba(223,214,201,.35)}
+.datos a:hover{border-color:var(--dorado-claro)}
+
+.pie{background:#1D2B3D;color:#A79E90;font-size:.85rem;padding:2.5rem 0}
+.pie p{margin-bottom:.6rem}
+.pie a{color:#CBC2B4}
+.aviso{border-left:2px solid var(--dorado-claro);padding-left:1rem;margin-bottom:1.6rem;max-width:62ch}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width:860px){
+  .perfil{grid-template-columns:1fr}
+  .retrato{max-width:240px}
+}
+@media (max-width:760px){
+  .nav-toggle{display:block}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;
+    gap:0;background:var(--arena);border-bottom:1px solid var(--tenue);
+    padding:.5rem 1.25rem 1.2rem;display:none}
+  .nav-links.abierto{display:flex}
+  .nav-links li{border-top:1px solid var(--tenue)}
+  .nav-links a{display:block;padding:.85rem 0;border:none}
+  .hilo{opacity:.18;width:90%;right:-25%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001ms !important;transition-duration:.001ms !important}
+  .hilo path{stroke-dashoffset:0}
+}
+</style>
+<!-- Preguntas frecuentes en formato que Google puede mostrar desplegado en los resultados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"¿Qué es el counseling o consultoría psicológica?","acceptedAnswer":{"@type":"Answer","text":"El counseling, conocido en Argentina también como consultoría psicológica o desarrollo humano, acompaña a personas que atraviesan dificultades propias del vivir: cambios, decisiones, pérdidas y crisis. Trabaja sobre el presente y sobre los recursos con los que la persona ya cuenta."}},
+    {"@type":"Question","name":"¿Necesito tener un problema grave para consultar?","acceptedAnswer":{"@type":"Answer","text":"No. La mayoría de las consultas llegan por situaciones que forman parte de la vida de cualquiera: una decisión difícil, una etapa que se termina, una sensación de estancamiento."}},
+    {"@type":"Question","name":"¿Cómo son los encuentros de counseling online?","acceptedAnswer":{"@type":"Answer","text":"Son individuales y por videollamada. La frecuencia se acuerda en el primer encuentro y se ajusta según cómo avance el proceso."}},
+    {"@type":"Question","name":"¿Se puede hacer counseling desde fuera de Argentina?","acceptedAnswer":{"@type":"Answer","text":"Sí. Al ser modalidad virtual solo hace falta conexión y un lugar donde poder hablar con tranquilidad. Los horarios se coordinan contemplando la diferencia horaria."}},
+    {"@type":"Question","name":"¿Desde qué edad se atiende?","acceptedAnswer":{"@type":"Answer","text":"Desde los 16 años. En el caso de personas menores de edad, el primer contacto se hace con quienes ejercen el cuidado."}}
+  ]
+}
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4499336550381228');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4499336550381228&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════ -->
+<header class="nav">
+  <nav class="nav-int" aria-label="Principal">
+    <a class="marca" href="#inicio">Emuná <span>·</span> El Cambio</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+    <ul class="nav-links" id="menu">
+      <li><a href="#emuna">Qué es Emuná</a></li>
+      <li><a href="#counseling">Counseling</a></li>
+      <li><a href="#pilares">Cómo trabajo</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#talleres">Talleres</a></li>
+      <li><a href="#sabrina">Sabrina</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ══ HERO ═════════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <svg class="hilo" viewBox="0 0 400 800" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <path d="M330 -40 C 330 160, 90 210, 90 400 C 90 590, 330 640, 330 840"/>
+    <path d="M390 -40 C 390 180, 150 240, 150 400 C 150 560, 390 620, 390 840" opacity=".45"/>
+  </svg>
+  <div class="contenedor hero-int">
+    <span class="rotulo">Counseling · Desarrollo humano · Bienestar</span>
+    <h1>El cambio también se puede acompañar</h1>
+    <p class="hero-sub">Un espacio de escucha para atravesar lo que estás viviendo —un duelo, una decisión, una mudanza, una etapa que se termina— sin tener que resolverlo en soledad. Encuentros online para adolescentes desde los 16 años y adultos.</p>
+    <div class="hero-acciones">
+      <a class="btn btn-lleno" href="https://wa.me/5491140756619?text=Hola%20Sabrina%2C%20quisiera%20saber%20m%C3%A1s%20sobre%20el%20proceso%20de%20counseling." target="_blank" rel="noopener">Escribile a Sabrina</a>
+      <a class="btn btn-linea" href="#counseling" style="color:var(--azul-profundo)">Cómo es un encuentro</a>
+    </div>
+  </div>
+  <div class="contenedor hero-pie">
+    <span>Adolescentes desde 16 años y adultos</span>
+    <span>Encuentros por videollamada</span>
+    <span>Primer encuentro orientativo</span>
+  </div>
+</section>
+
+<!-- ══ QUÉ ES EMUNÁ ═════════════════════════════════════ -->
+<section class="seccion" id="emuna">
+  <div class="contenedor">
+    <span class="rotulo">Qué es Emuná</span>
+    <h2>Acompañamiento para tu crecimiento y transformación</h2>
+    <div class="grilla grilla-2" style="margin-top:2.2rem">
+      <div>
+        <p><strong>Emuná El Cambio</strong> es un espacio de counseling, desarrollo humano y bienestar. Nació de una idea concreta: los cambios grandes —los que elegís y los que te tocan— se atraviesan mejor cuando hay alguien que escucha sin apurar.</p>
+        <p>El árbol de la marca resume bien la idea: lo que sostiene el crecimiento está abajo, en las raíces, y la luz aparece justo en el punto donde el tronco se encuentra con ellas.</p>
+      </div>
+      <div>
+        <p>El trabajo se apoya en tres ideas simples: que lo que te pasa hoy merece atención hoy, que ya tenés recursos aunque en este momento no los veas, y que ningún cambio se atraviesa mejor en soledad.</p>
+        <p>El trabajo se hace conversando, con el tiempo que cada persona necesite y con la atención puesta en lo que podés hacer con lo que tenés hoy. Sin diagnósticos ni etiquetas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SIGNATURE: EMPEZÁ POR DONDE ESTÁS ════════════════ -->
+<section class="seccion" style="padding-top:0">
+  <div class="contenedor">
+    <div class="puerta">
+      <span class="rotulo">Empezá por donde estás</span>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.2rem)">¿Qué te trajo hasta acá?</h2>
+      <p class="medida" style="margin-top:1rem">Elegí lo que más se parezca a tu momento. No hace falta que sea exacto —es solo un punto de partida.</p>
+
+      <ul class="fichas">
+        <li><button class="ficha" aria-pressed="false" data-destino="desarrollo"
+          data-titulo="Siento que no avanzo"
+          data-texto="Cuando algo no anda pero cuesta nombrarlo, el primer trabajo es justamente ese: ponerle palabras. A partir de ahí aparece qué querés cambiar y con qué contás para hacerlo."
+          data-msg="Hola Sabrina, siento que estoy en un momento de estancamiento y me gustaría empezar un espacio de counseling.">Siento que no avanzo</button></li>
+
+        <li><button class="ficha" aria-pressed="false" data-destino="crisis"
+          data-titulo="Se me dio vuelta la vida"
+          data-texto="Una separación, una mudanza, un diagnóstico, un país nuevo. Las crisis vitales llevan su tiempo. Lo que cambia con acompañamiento es la manera de transitarlas: con más orden y menos soledad."
+          data-msg="Hola Sabrina, estoy atravesando un cambio muy fuerte en mi vida y necesito acompañamiento.">Se me dio vuelta la vida</button></li>
+
+        <li><button class="ficha" aria-pressed="false" data-destino="duelos"
+          data-titulo="Perdí a alguien"
+          data-texto="Cada duelo tiene su propio tiempo y su propio recorrido. El acompañamiento te deja atravesarlo a tu ritmo, con lugar para todo lo que vaya apareciendo."
+          data-msg="Hola Sabrina, estoy atravesando un duelo y me gustaría tener acompañamiento.">Perdí a alguien</button></li>
+
+        <li><button class="ficha" aria-pressed="false" data-destino="vocacional"
+          data-titulo="No sé qué estudiar"
+          data-texto="Elegir una carrera empieza por conocerte: qué te interesa, qué se te da bien, qué vida querés tener alrededor de eso. La decisión llega después y llega con fundamento."
+          data-msg="Hola Sabrina, quiero hacer un proceso de orientación vocacional.">No sé qué estudiar</button></li>
+
+        <li><button class="ficha" aria-pressed="false" data-destino="laboral"
+          data-titulo="Quiero cambiar de trabajo"
+          data-texto="Un cambio laboral toca mucho más que el sueldo: la identidad, los vínculos, la rutina, la idea que tenés de vos. Vale la pena pensarlo con alguien antes, durante y después."
+          data-msg="Hola Sabrina, estoy pensando en un cambio laboral y quisiera hacer un proceso de orientación.">Quiero cambiar de trabajo</button></li>
+
+        <li><button class="ficha" aria-pressed="false" data-destino="desarrollo"
+          data-titulo="Todavía no sé qué necesito"
+          data-texto="Está perfecto. Muchas veces el proceso empieza así, con la sensación de que algo hay que mover pero sin saber qué. La primera conversación sirve justamente para eso."
+          data-msg="Hola Sabrina, todavía no sé bien qué necesito pero me gustaría conversar.">Todavía no sé qué necesito</button></li>
+      </ul>
+
+      <div class="respuesta" id="respuesta" hidden>
+        <h3 id="resp-titulo" style="margin-bottom:.6rem"></h3>
+        <p id="resp-texto"></p>
+        <div class="respuesta-acciones">
+          <a class="btn btn-oscuro" id="resp-wa" href="#" target="_blank" rel="noopener">Escribile a Sabrina por WhatsApp</a>
+          <a class="enlace-sutil" id="resp-link" href="#servicios">Leer más sobre este espacio →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COUNSELING ═══════════════════════════════════════ -->
+<section class="seccion" id="counseling" style="background:var(--crema);border-block:1px solid var(--tenue)">
+  <div class="contenedor">
+    <span class="rotulo">Qué es el Counseling</span>
+    <h2>Un espacio para pensar en voz alta</h2>
+    <p class="intro" style="margin-top:1.5rem">El counseling es una disciplina del acompañamiento centrada en la persona. Su punto de partida es que cada quien conoce su propia vida mejor que nadie, y que muchas veces lo que hace falta es tener dónde ordenarla en voz alta, con alguien que escuche con atención.</p>
+
+    <div class="claves">
+      <div class="clave">
+        <h3>Centrado en el presente</h3>
+        <p>El trabajo empieza por lo que estás atravesando ahora y por lo que querés hacer con eso.</p>
+      </div>
+      <div class="clave">
+        <h3>Trabaja sobre tus recursos</h3>
+        <p>La idea es que salgas del proceso con herramientas propias, que en general ya estaban ahí y ahora podés usar.</p>
+      </div>
+      <div class="clave">
+        <h3>Un encuadre profesional definido</h3>
+        <p>El counseling acompaña las dificultades propias del vivir. Cuando una consulta necesita un abordaje clínico, se conversa y se deriva a un profesional de la psicología.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;max-width:66ch">
+      <h3 style="margin-bottom:1rem">Cómo son los encuentros</h3>
+<!-- CONFIRMAR CON SABRINA: duración y frecuencia de los encuentros individuales -->
+      <p>Los encuentros son individuales y por videollamada, así que podés conectarte desde donde estés —dentro o fuera del país—. La frecuencia se acuerda entre las dos partes, habitualmente semanal al comienzo.</p>
+<!-- CONFIRMAR CON SABRINA: el encuadre del primer encuentro lo define ella -->
+      <p>El primer encuentro es una conversación para conocernos: contás qué te está pasando y se ordena qué se puede trabajar. Todo lo que se habla es confidencial.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PILARES ══════════════════════════════════════════ -->
+<section class="seccion" id="pilares">
+  <div class="contenedor">
+    <span class="rotulo">El proceso</span>
+    <h2>Cómo trabajo</h2>
+    <p class="intro" style="margin-top:1.5rem">Sin fórmulas mágicas ni respuestas prefabricadas. Cada persona llega con una historia distinta, así que cada proceso se arma entre las dos partes, respetando tus tiempos, tus objetivos y tu manera de atravesar las cosas. Sobre esa base se apoyan cuatro pilares.</p>
+
+    <div class="claves" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="clave">
+        <h3>Autoconocimiento</h3>
+        <p>Comprender tus emociones, reconocer tus fortalezas e identificar con qué recursos contás para decidir con más conciencia.</p>
+      </div>
+      <div class="clave">
+        <h3>Herramientas para lo cotidiano</h3>
+        <p>Recursos concretos y aplicables a tu realidad: lo personal, lo familiar, lo laboral, lo vincular.</p>
+      </div>
+      <div class="clave">
+        <h3>Gestión de crisis</h3>
+        <p>Un espacio para transitar la incertidumbre, las pérdidas, los conflictos y los cambios, construyendo otras perspectivas.</p>
+      </div>
+      <div class="clave">
+        <h3>Crecimiento sostenido</h3>
+        <p>Resuelta la dificultad puntual, el proceso puede seguir en el desarrollo de tus potencialidades y de tu autonomía.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICIOS ════════════════════════════════════════ -->
+<section class="seccion" id="servicios">
+  <div class="contenedor">
+    <span class="rotulo">Servicios</span>
+    <h2>Espacios de acompañamiento</h2>
+    <p class="intro" style="margin-top:1.5rem">Todos se trabajan en modalidad virtual, con adolescentes desde los 16 años y con adultos, adaptando el acompañamiento a cada etapa del ciclo de vida.</p>
+
+    <div class="grilla grilla-3">
+      <article class="tarjeta" id="desarrollo">
+        <h3>Desarrollo Personal</h3>
+        <p>Un espacio para conocerte mejor y hacer algo con eso: revisar cómo te vinculás, qué lugar ocupás en tus relaciones, qué te frena y qué te impulsa.</p>
+        <ul>
+          <li>Fortalecimiento de vínculos</li>
+          <li>Desarrollo de potencialidades</li>
+          <li>Autoconocimiento y toma de decisiones</li>
+        </ul>
+      </article>
+
+      <article class="tarjeta" id="vocacional">
+        <h3>Orientación Vocacional</h3>
+        <p>Para adolescentes y adultos frente a una elección de estudios. El trabajo apunta a que la decisión sea propia y esté fundamentada, con acompañamiento especializado.</p>
+        <ul>
+          <li>4 encuentros de 50 minutos</li>
+          <li>Modalidad grupal o individual</li>
+          <li>Puede extenderse según el proceso</li>
+        </ul>
+      </article>
+
+      <article class="tarjeta" id="laboral">
+        <h3>Orientación Laboral</h3>
+        <p>Para quienes están frente a un cambio de trabajo, una reinserción o la sensación de estar en el lugar equivocado. Con experiencia previa en ventas, capacitación y coordinación de equipos.</p>
+        <ul>
+          <li>Capacitación de 4 encuentros de 2 hs</li>
+          <li>CV, filtros ATS y entrevistas</li>
+          <li>IA aplicada a la búsqueda laboral</li>
+        </ul>
+      </article>
+
+      <article class="tarjeta" id="crisis">
+        <h3>Crisis Vitales</h3>
+        <p>Esos momentos en que algo se rompe o se corre de lugar y lo conocido deja de servir: separaciones, migraciones, enfermedad, cambios de etapa.</p>
+        <ul>
+          <li>Desarraigo y migración</li>
+          <li>Cambios de etapa vital</li>
+          <li>Situaciones de crisis y transición</li>
+        </ul>
+      </article>
+
+      <article class="tarjeta" id="duelos">
+        <h3>Duelos</h3>
+        <p>Acompañamiento en la pérdida de un ser querido y también en otros duelos que no siempre se nombran: una relación, un proyecto, una salud, un país.</p>
+        <ul>
+          <li>Duelo por fallecimiento</li>
+          <li>Duelos no reconocidos</li>
+          <li>Procesos de despedida</li>
+        </ul>
+      </article>
+
+      <article class="tarjeta" style="background:var(--tostado);border-color:var(--dorado)">
+        <h3>¿No sabés cuál elegir?</h3>
+        <p style="color:var(--tinta-suave)">Escribí y contame en pocas líneas qué te está pasando. En la primera conversación vemos por dónde empezar, sin compromiso.</p>
+        <a class="btn btn-lleno" style="margin-top:1.4rem" href="https://wa.me/5491140756619?text=Hola%20Sabrina%2C%20quisiera%20consultar%20por%20un%20espacio%20de%20counseling." target="_blank" rel="noopener">Consultar</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SABRINA ══════════════════════════════════════════ -->
+<section class="seccion" id="sabrina" style="background:var(--crema);border-block:1px solid var(--tenue)">
+  <div class="contenedor">
+    <span class="rotulo">Sobre Sabrina</span>
+    <h2>Quién te acompaña</h2>
+    <div class="perfil" style="margin-top:2.5rem">
+      <!-- Reemplazar por: <img src="sabrina.jpg" alt="Clr. Sabrina Ricci Pérez, consultora psicológica de Emuná El Cambio"> -->
+      <div class="retrato">Foto de Sabrina<br>(reemplazar por sabrina.jpg)</div>
+      <div>
+        <p class="saludo">Hola, soy Sabrina.</p>
+        <p>Soy Counselor, Psicóloga Social y una apasionada del desarrollo humano. A lo largo de mi vida descubrí que, más allá de los distintos trabajos y experiencias que tuve, siempre hubo un mismo hilo conductor: acompañar a las personas.</p>
+        <p>Desde muy joven trabajé en áreas vinculadas a las relaciones humanas, las ventas, la capacitación y la coordinación de grupos. Con el tiempo comprendí que escuchar, comprender y acompañar a otros era mucho más que una habilidad: era mi propósito.</p>
+        <p>Hoy acompaño a personas que atraviesan momentos de cambio, incertidumbre o dificultades cotidianas, brindándoles un espacio profesional de escucha donde puedan fortalecer sus propios recursos, comprender lo que les sucede y construir herramientas para vivir con mayor bienestar y claridad.</p>
+        <p>Creo profundamente que no existen fórmulas mágicas ni respuestas prefabricadas. Cada persona tiene su propia historia, sus tiempos y su manera de transitar los desafíos de la vida. Por eso, cada proceso de Counseling es único y se construye de forma personalizada, desde la empatía, el respeto y el compromiso profesional.</p>
+        <p>Además de mi formación como Counselor y Psicóloga Social, me especialicé en Inteligencia Emocional, Liderazgo, Orientación Vocacional y prevención en salud mental, integrando distintas herramientas que enriquecen cada acompañamiento.</p>
+        <p>Más allá de mi profesión, soy mamá, disfruto de las actividades creativas, escribir, pintar y encontrar belleza en las pequeñas cosas de la vida. Creo que el crecimiento personal también nace de conectar con aquello que nos hace bien y nos permite ser quienes realmente somos.</p>
+
+        <p class="firma">«Acompañar a las personas para que descubran y fortalezcan sus propios recursos.»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TALLERES ═════════════════════════════════════════ -->
+<section class="seccion" id="talleres" style="background:var(--tostado);border-block:1px solid var(--tenue)">
+  <div class="contenedor">
+    <span class="rotulo">Talleres y capacitaciones</span>
+    <h2>Para personas, grupos e instituciones</h2>
+    <p class="intro" style="margin-top:1.5rem">Un espacio de talleres autogestivos para quienes buscan procesos de desarrollo humano, bienestar y orientación. Cada propuesta puede dictarse de manera independiente o adaptarse en formato, duración y modalidad según la demanda del grupo.</p>
+
+    <div class="area">
+      <p class="area-titulo">Bienestar y desarrollo personal</p>
+      <div class="talleres">
+        <article class="taller">
+          <span class="duracion">4 encuentros · 6 hs</span>
+          <h3>Inteligencia Emocional Aplicada</h3>
+          <p>Herramientas para identificar, comprender y regular las propias emociones, fortaleciendo la autoconciencia y la capacidad de respuesta ante los desafíos cotidianos.</p>
+        </article>
+        <article class="taller">
+          <span class="duracion">2 encuentros · 3 hs</span>
+          <h3>Naturaleza y Bienestar</h3>
+          <p>Reconectar con el entorno natural como recurso para favorecer el bienestar, la atención plena y la calidad de vida, a través de actividades de observación y reflexión.</p>
+        </article>
+        <article class="taller">
+          <span class="duracion">2 encuentros · 3 hs</span>
+          <h3>Bienestar Digital</h3>
+          <p>Herramientas para desarrollar hábitos digitales saludables, prevenir el agotamiento por hiperconectividad y mejorar la relación con la tecnología.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="area">
+      <p class="area-titulo">Habilidades humanas</p>
+      <div class="talleres">
+        <article class="taller">
+          <span class="duracion">4 encuentros · 6 hs</span>
+          <h3>Comunicación Asertiva y Resolución de Conflictos</h3>
+          <p>Herramientas prácticas para expresar ideas y necesidades con claridad y respeto, y para abordar los conflictos interpersonales de manera constructiva.</p>
+        </article>
+        <article class="taller">
+          <span class="duracion">2 encuentros · 3 hs</span>
+          <h3>Filosofía Práctica para la Vida Cotidiana</h3>
+          <p>Un espacio para reflexionar sobre los valores, las decisiones y los desafíos cotidianos con herramientas de la filosofía práctica y el pensamiento crítico.</p>
+        </article>
+        <article class="taller">
+          <span class="duracion">2 encuentros · 3 hs · vivencial</span>
+          <h3>Creatividad y Expresión para el Desarrollo Personal</h3>
+          <p>A través de dinámicas expresivas y recursos creativos se trabajan habilidades de comunicación, autoconocimiento y expresión emocional.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="area">
+      <p class="area-titulo">Desarrollo social y comunitario</p>
+      <div class="talleres">
+        <article class="taller">
+          <span class="duracion">4 encuentros · 6 hs</span>
+          <h3>Emociones, Cultura e Identidad</h3>
+          <p>Las emociones no se desarrollan aisladas: la familia, la cultura y el contexto social las moldean. El curso invita a comprender cómo se construye la identidad emocional y cómo impacta en los vínculos.</p>
+        </article>
+        <article class="taller">
+          <span class="duracion">4 encuentros · 6 hs</span>
+          <h3>Resiliencia Comunitaria y Redes de Apoyo</h3>
+          <p>Cómo los grupos y las comunidades desarrollan recursos para afrontar situaciones de crisis, fortaleciendo la cooperación, el liderazgo y la participación.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="area">
+      <p class="area-titulo">Orientación vocacional y laboral</p>
+      <div class="talleres">
+        <article class="taller">
+          <span class="duracion">4 encuentros de 50 min · grupal o individual</span>
+          <h3>Orientación Vocacional desde el Counseling</h3>
+          <p>El proceso puede extenderse algunos encuentros más, según el desarrollo que busque quien consulta.</p>
+        </article>
+        <article class="taller" style="grid-column:1/-1">
+          <span class="duracion">Capacitación · 4 encuentros de 2 hs</span>
+          <h3>Orientación Laboral</h3>
+          <p>Una capacitación completa para atravesar una búsqueda laboral con método, desde el armado del CV hasta la entrevista.</p>
+          <ul class="temario">
+            <li>Soft skills</li>
+            <li>Hard skills</li>
+            <li>Filtros ATS</li>
+            <li>Armado del CV</li>
+            <li>Acompañamiento</li>
+            <li>Plataformas laborales</li>
+            <li>Inteligencia artificial aplicada a la búsqueda laboral</li>
+            <li>Derechos laborales</li>
+            <li>Desarrollo y presentación de entrevistas</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <p style="margin-top:2.5rem;font-size:.95rem;color:var(--tinta-suave);max-width:62ch">Las capacitaciones pueden modificarse en su duración según la necesidad de cada grupo, y dictarse como cursos, talleres o seminarios.</p>
+    <a class="btn btn-lleno" style="margin-top:1rem" href="https://wa.me/5491140756619?text=Hola%20Sabrina%2C%20quisiera%20consultar%20por%20los%20talleres%20y%20capacitaciones." target="_blank" rel="noopener">Consultar por talleres</a>
+  </div>
+</section>
+
+<!-- ══ BLOG ═════════════════════════════════════════════ -->
+<section class="seccion" id="blog">
+  <div class="contenedor">
+    <span class="rotulo">Blog</span>
+    <h2>Para leer con tiempo</h2>
+    <p class="intro" style="margin-top:1.5rem">Notas breves sobre los temas que más aparecen en consulta. Sin recetas ni fórmulas.</p>
+
+    <div class="grilla grilla-3">
+      <article class="tarjeta">
+        <a class="nota" href="#">
+          <span class="fecha">Próximamente</span>
+          <h3>Qué es una crisis vital (y por qué no es una falla)</h3>
+          <p style="margin-top:.8rem">Título de ejemplo. Reemplazar por la primera nota real y enlazar al artículo completo.</p>
+        </a>
+      </article>
+      <article class="tarjeta">
+        <a class="nota" href="#">
+          <span class="fecha">Próximamente</span>
+          <h3>Los duelos que nadie nombra</h3>
+          <p style="margin-top:.8rem">Título de ejemplo. Reemplazar por la segunda nota real.</p>
+        </a>
+      </article>
+      <article class="tarjeta">
+        <a class="nota" href="#">
+          <span class="fecha">Próximamente</span>
+          <h3>Elegir una carrera sin saber quién sos todavía</h3>
+          <p style="margin-top:.8rem">Título de ejemplo. Reemplazar por la tercera nota real.</p>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PREGUNTAS FRECUENTES ═════════════════════════════ -->
+<section class="seccion" id="preguntas" style="background:var(--tostado);border-block:1px solid var(--tenue)">
+  <div class="contenedor">
+    <span class="rotulo">Preguntas frecuentes</span>
+    <h2>Lo que suelen preguntar antes de empezar</h2>
+
+    <div class="faq">
+      <details>
+        <summary>¿Qué es exactamente el counseling?</summary>
+        <p>En Argentina se lo conoce también como consultoría psicológica o desarrollo humano. Es una disciplina que acompaña a personas que atraviesan dificultades propias del vivir —cambios, decisiones, pérdidas, crisis— trabajando sobre el presente y sobre los recursos con los que ya contás. Cuando una consulta necesita un abordaje clínico, se deriva a un profesional de la psicología. Son espacios que se complementan y que muchas veces conviven.</p>
+      </details>
+      <details>
+        <summary>¿Necesito tener un problema grave para consultar?</summary>
+        <p>No. La mayoría de las consultas llegan por situaciones que forman parte de la vida de cualquiera: una decisión difícil, una etapa que se termina, una sensación de estancamiento. No hace falta estar mal para querer estar mejor.</p>
+      </details>
+      <details>
+        <summary>¿Cómo son los encuentros y cuánto duran?</summary>
+<!-- CONFIRMAR CON SABRINA: duración y frecuencia -->
+        <p>Son individuales y por videollamada. La frecuencia se acuerda en el primer encuentro; lo habitual es empezar con encuentros semanales e ir ajustando según cómo avance el proceso.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto dura un proceso?</summary>
+<!-- CONFIRMAR CON SABRINA: duración típica de los procesos -->
+        <p>Depende de lo que estés atravesando y de qué quieras trabajar. Hay consultas puntuales que se resuelven en pocos encuentros y procesos que llevan varios meses. Es algo que se revisa a lo largo del camino, nunca una condición fijada de antemano.</p>
+      </details>
+      <details>
+        <summary>Vivo fuera de Argentina, ¿puedo hacer el proceso igual?</summary>
+        <p>Sí. Al ser modalidad virtual, solo hace falta conexión y un lugar donde puedas hablar con tranquilidad. Los horarios se coordinan contemplando la diferencia horaria.</p>
+      </details>
+      <details>
+        <summary>¿Atendés adolescentes?</summary>
+<!-- CONFIRMAR CON SABRINA: procedimiento con menores de edad -->
+        <p>Sí, desde los 16 años. En el caso de personas menores de edad, el primer contacto se hace con quienes ejercen el cuidado y luego se acuerda el encuadre del espacio, que es igualmente confidencial.</p>
+      </details>
+      <details>
+        <summary>¿Es confidencial?</summary>
+        <p>Sí. Todo lo que se habla en los encuentros queda entre vos y Sabrina, durante el proceso y después de que termine. La confidencialidad es parte del encuadre profesional del counseling.</p>
+      </details>
+      <details>
+        <summary>¿Cómo hago para empezar?</summary>
+<!-- CONFIRMAR CON SABRINA: circuito de primer contacto -->
+        <p>Escribí por WhatsApp o por mail contando brevemente qué te está pasando. Sabrina te responde y coordinan un primer encuentro por videollamada.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACTO ═════════════════════════════════════════ -->
+<section class="seccion contacto" id="contacto">
+  <div class="contenedor">
+    <span class="rotulo">Contacto</span>
+    <h2>Escribí cuando sientas que es el momento</h2>
+    <div class="contacto-grid">
+      <div>
+        <p style="color:#D8CEBF;max-width:44ch">No hace falta que sepas explicar todo. Alcanza con una línea contando qué te está pasando; el resto lo conversamos.</p>
+        <a class="btn btn-lleno" style="margin-top:1rem" href="https://wa.me/5491140756619?text=Hola%20Sabrina%2C%20quisiera%20consultar%20por%20un%20espacio%20de%20counseling." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <!-- CALENDLY: cuando esté la cuenta, descomentar y pegar el link real
+        <a class="btn btn-linea" style="margin-top:1rem;color:var(--arena)" href="https://calendly.com/USUARIO" target="_blank" rel="noopener">Reservar una consulta</a>
+        -->
+      </div>
+      <ul class="datos">
+        <li><span>WhatsApp Business</span><a href="https://wa.me/5491140756619" target="_blank" rel="noopener">+54 9 11 4075 6619</a></li>
+        <li><span>Mail</span><a href="mailto:emunaelcambio@gmail.com">emunaelcambio@gmail.com</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/emunaelcambio" target="_blank" rel="noopener">@emunaelcambio</a></li>
+        <li><span>Modalidad</span>Encuentros virtuales, Argentina y exterior</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PIE ══════════════════════════════════════════════ -->
+<footer class="pie">
+  <div class="contenedor">
+    <p class="aviso">Este sitio no brinda atención de urgencias. Si estás atravesando una crisis o tenés pensamientos de hacerte daño, comunicate con el Centro de Asistencia al Suicida: <strong>135</strong> desde CABA y Gran Buenos Aires, o <strong>0800 345 1435</strong> desde todo el país. Ante una emergencia, llamá al <strong>911</strong> o al <strong>107</strong> (SAME).</p>
+    <p>Emuná El Cambio — Counseling · Desarrollo humano · Bienestar. Modalidad virtual.</p>
+    <p>Clr. Sabrina Ricci Pérez — Consultoría Psicológica</p>
+    <p><a href="mailto:emunaelcambio@gmail.com">emunaelcambio@gmail.com</a> · <a href="https://wa.me/5491140756619" target="_blank" rel="noopener">+54 9 11 4075 6619</a> · <a href="https://www.instagram.com/emunaelcambio" target="_blank" rel="noopener">@emunaelcambio</a></p>
+  </div>
+</footer>
+
+<script>
+// Menú móvil
+const btnMenu = document.querySelector('.nav-toggle');
+const menu = document.getElementById('menu');
+btnMenu.addEventListener('click', () => {
+  const abierto = menu.classList.toggle('abierto');
+  btnMenu.setAttribute('aria-expanded', abierto);
+});
+menu.addEventListener('click', e => {
+  if (e.target.tagName === 'A') { menu.classList.remove('abierto'); btnMenu.setAttribute('aria-expanded', false); }
+});
+
+// "Empezá por donde estás"
+const WA = 'https://wa.me/5491140756619?text=';
+const fichas = document.querySelectorAll('.ficha');
+const caja = document.getElementById('respuesta');
+const rTitulo = document.getElementById('resp-titulo');
+const rTexto = document.getElementById('resp-texto');
+const rWa = document.getElementById('resp-wa');
+const rLink = document.getElementById('resp-link');
+
+fichas.forEach(f => f.addEventListener('click', () => {
+  fichas.forEach(o => o.setAttribute('aria-pressed', 'false'));
+  f.setAttribute('aria-pressed', 'true');
+
+  rTitulo.textContent = f.dataset.titulo;
+  rTexto.textContent = f.dataset.texto;
+  rWa.href = WA + encodeURIComponent(f.dataset.msg);
+  rLink.href = '#' + f.dataset.destino;
+  caja.hidden = false;
+
+  document.querySelectorAll('.tarjeta').forEach(t => t.classList.remove('destacada'));
+  const destino = document.getElementById(f.dataset.destino);
+  if (destino) destino.classList.add('destacada');
+}));
+
+rLink.addEventListener('click', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.tarjeta.destacada').forEach(t => t.classList.remove('destacada'));
+  }, 4000);
+});
+</script>
+</body>
+</html>
